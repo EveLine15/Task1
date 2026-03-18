@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Задание 2: Минимальный набор meta тегов -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Персональная страница о моем хобби — игра на гитаре. История, советы для начинающих и любимые композиции."
+    />
+    <meta
+      name="keywords"
+      content="гитара, хобби, музыка, аккорды, обучение, медиатор"
+    />
+    <meta name="author" content="Дмитрий Смирнов" />
+
+    <!-- Задание 8*: Специальные теги для социальных сетей (Open Graph и Twitter Cards) -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Мое хобби: Игра на гитаре" />
+    <meta
+      property="og:description"
+      content="Шестиструнная история: от первых аккордов до домашних концертов."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://example.com/guitar-preview.jpg"
+    />
+    <meta property="og:url" content="https://example.com/guitar-hobby" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Мое хобби: Игра на гитаре" />
+    <meta
+      name="twitter:description"
+      content="Шестиструнная история: от первых аккордов до домашних концертов."
+    />
+    <meta
+      name="twitter:image"
+      content="https://example.com/guitar-preview.jpg"
+    />
+
+    <title>Мое хобби — игра на гитаре</title>
+  </head>
+  <body>
+    <header
+      id="page-header"
+      class="main-header"
+      style="border-bottom: 2px solid #ccc"
+    >
+      <h1>🎸 Мое хобби: игра на гитаре</h1>
+      <nav id="main-navigation" class="site-nav">
+        <ul>
+          <li><a href="#about" title="Перейти к разделу о себе">Обо мне</a></li>
+          <li><a href="#guitar-types" title="Виды гитар">Виды гитар</a></li>
+          <li><a href="#tips" title="Советы новичкам">Советы</a></li>
+          <li><a href="#contact" title="Обратная связь">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" class="content-area">
+      <section id="about" class="info-section" data-section-type="biography">
+        <h2>Обо мне</h2>
+        <p>
+          Привет! Я <strong>Настя</strong>, и уже <em>более 2 лет</em> моё
+          главное хобби - это <mark>игра на гитаре</mark>. Это не просто
+          увлечение, а способ выразить эмоции и отдохнуть от повседневных забот.
+        </p>
+        <p>
+          Всё началось с простого желания научиться играть любимые песни, а
+          теперь это неотъемлемая часть моей жизни.
+        </p>
+        <p hidden id="secret-message" tabindex="-1">
+          (Это секретное сообщение видно только в коде, но оно содержит
+          глобальный атрибут hidden)
+        </p>
+      </section>
+
+      <section
+        id="guitar-types"
+        class="info-section"
+        data-section-type="instruments"
+      >
+        <h2>Какие гитары я использую</h2>
+        <ul>
+          <li>
+            <strong>Акустическая гитара:</strong> Классика. Звучит тепло и
+            уютно. <i>Идеальна для походов.</i>
+          </li>
+          <li>
+            <strong>Электрогитара:</strong> Для драйва и экспериментов со
+            звуком. <u>Требует усилитель.</u>
+          </li>
+        </ul>
+      </section>
+
+      <section id="tips" class="info-section" data-section-type="advice">
+        <h2>Полезные советы</h2>
+        <article>
+          <h3>С чего начать?</h3>
+          <p>
+            1. Купите
+            <abbr title="Инструмент, на котором вы будете учиться">гитару</abbr
+            >. Не гонитесь за дорогой, возьмите бюджетную, но с удобным
+            грифом.<br />
+            2. Учите аккорды. <small>(Совет: начните с Am, Dm, E).</small><br />
+            3. Играйте каждый день хотя бы по 20 минут.
+          </p>
+
+          <blockquote cite="https://www.example.com">
+            "Гитара - это просто. Поставь пальцы, дерни струну - ты уже
+            музыкант." - <cite>Народная мудрость</cite>
+          </blockquote>
+
+          <p>
+            Моя ошибка: <del>играть слишком тонким медиатором</del>
+            <ins>подобрать правильную толщину медиатора.</ins>
+          </p>
+        </article>
+      </section>
+
+      <section id="contact" class="info-section" data-section-type="contacts">
+        <h2>Обратная связь</h2>
+        <form id="contact-form" class="feedback-form">
+          <label for="name">Ваше имя:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Например: Настя"
+            required
+          />
+
+          <label for="message">Ваше сообщение:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="3"
+            placeholder="Напишите что-нибудь о гитаре..."
+            draggable="false"
+            contenteditable="true"
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+        <p dir="ltr" lang="ru" style="font-size: 0.9em; color: gray">
+          *Поля формы не работают, это просто демонстрация.
+        </p>
+      </section>
+    </main>
+
+    <footer
+      id="page-footer"
+      class="main-footer"
+      style="margin-top: 30px; border-top: 1px solid #eee"
+    >
+      <p>
+        © 2025 Мое хобби — гитара. Все права защищены. <br />
+        Сделано с <b>любовью</b> к музыке и <i>коду</i>.
+      </p>
+    </footer>
+  </body>
+</html>
