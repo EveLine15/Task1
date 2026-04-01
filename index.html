@@ -2,171 +2,238 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="description"
-      content="Персональная страница о моем хобби — игра на гитаре. История, советы для начинающих и любимые композиции."
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <meta
-      name="keywords"
-      content="гитара, хобби, музыка, аккорды, обучение, медиатор"
+    <title>Времена года и месяцы</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/1995/1995575.png"
+      type="image/png"
     />
-    <meta name="author" content="Дмитрий Смирнов" />
-
-    <meta property="og:title" content="Мое хобби: Игра на гитаре" />
-    <meta
-      property="og:description"
-      content="Шестиструнная история: от первых аккордов до домашних концертов."
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://i.postimg.cc/9MLtd4h1/g250-bbl.jpg"
-    />
-    <meta property="og:url" content="https://eveline15.github.io/Task1/" />
-    <meta property="og:locale" content="ru_RU" />
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Мое хобби: Игра на гитаре" />
-    <meta
-      name="twitter:description"
-      content="Шестиструнная история: от первых аккордов до домашних концертов."
-    />
-    <meta
-      name="twitter:image"
-      content="https://i.postimg.cc/9MLtd4h1/g250-bbl.jpg"
-    />
-
-    <title>Мое хобби — игра на гитаре</title>
+    <meta http-equiv="refresh" content="10; url=gallery.html" />
   </head>
   <body>
-    <header
-      id="page-header"
-      class="main-header"
-      style="border-bottom: 2px solid #ccc"
-    >
-      <h1>🎸 Мое хобби: игра на гитаре</h1>
-      <img
-        src="https://i.postimg.cc/9MLtd4h1/g250-bbl.jpg"
-        alt="Гитара на подставке"
-        style="
-          max-width: 100%;
-          height: auto;
-          border-radius: 8px;
-          margin: 20px 0;
-        "
-      />
-      <nav id="main-navigation" class="site-nav">
-        <ul>
-          <li><a href="#about" title="Перейти к разделу о себе">Обо мне</a></li>
-          <li><a href="#guitar-types" title="Виды гитар">Виды гитар</a></li>
-          <li><a href="#tips" title="Советы новичкам">Советы</a></li>
-          <li><a href="#contact" title="Обратная связь">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div>
+      <h1>Календарь 12 месяцев</h1>
 
-    <main id="main-content" class="content-area">
-      <section id="about" class="info-section" data-section-type="biography">
-        <h2>Обо мне</h2>
-        <p>
-          Привет! Я <strong>Настя</strong>, и уже <em>более 2 лет</em> моё
-          главное хобби - это <mark>игра на гитаре</mark>. Это не просто
-          увлечение, а способ выразить эмоции и отдохнуть от повседневных забот.
-        </p>
-        <p>
-          Всё началось с простого желания научиться играть любимые песни, а
-          теперь это неотъемлемая часть моей жизни.
-        </p>
-        <p hidden id="secret-message" tabindex="-1">
-          (Это секретное сообщение видно только в коде, но оно содержит
-          глобальный атрибут hidden)
-        </p>
-      </section>
-
-      <section
-        id="guitar-types"
-        class="info-section"
-        data-section-type="instruments"
-      >
-        <h2>Какие гитары я использую</h2>
-        <ul>
-          <li>
-            <strong>Акустическая гитара:</strong> Классика. Звучит тепло и
-            уютно. <i>Идеальна для походов.</i>
-          </li>
-          <li>
-            <strong>Электрогитара:</strong> Для драйва и экспериментов со
-            звуком. <u>Требует усилитель.</u>
-          </li>
-        </ul>
-      </section>
-
-      <section id="tips" class="info-section" data-section-type="advice">
-        <h2>Полезные советы</h2>
-        <article>
-          <h3>С чего начать?</h3>
-          <p>
-            1. Купите
-            <abbr title="Инструмент, на котором вы будете учиться">гитару</abbr
-            >. Не гонитесь за дорогой, возьмите бюджетную, но с удобным
-            грифом.<br />
-            2. Учите аккорды. <small>(Совет: начните с Am, Dm, E).</small><br />
-            3. Играйте каждый день хотя бы по 20 минут.
-          </p>
-
-          <blockquote cite="https://citaty.info/quote/12690">
-            Гитара — как человеческая душа, передающая послание миру всего через
-            шесть струн. - <cite>Цитаты.инфо</cite>
-          </blockquote>
-
-          <p>
-            Моя ошибка: <del>играть слишком тонким медиатором</del>
-            <ins>подобрать правильную толщину медиатора.</ins>
-          </p>
-        </article>
-      </section>
-
-      <section id="contact" class="info-section" data-section-type="contacts">
-        <h2>Обратная связь</h2>
-        <form id="contact-form" class="feedback-form">
-          <label for="name">Ваше имя:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Например: Настя"
-            required
+      <div>
+        <div>
+          <img
+            width="80"
+            height="80"
+            src="https://static.thenounproject.com/png/64-200.png"
+            alt="Зима"
           />
+          <div>
+            <a href="winter.html">Декабрь</a>
+          </div>
+          <div>
+            <a href="winter.html">Январь</a>
+          </div>
+          <div>
+            <a href="winter.html">Февраль</a>
+          </div>
+        </div>
 
-          <label for="message">Ваше сообщение:</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="3"
-            placeholder="Напишите что-нибудь о гитаре..."
-            draggable="false"
-            contenteditable="true"
-          ></textarea>
+        <div>
+          <img
+            width="80"
+            height="80"
+            src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png"
+            alt="Весна"
+          />
+          <div>
+            <a href="spring.html">Март</a>
+          </div>
+          <div>
+            <a href="spring.html">Апрель</a>
+          </div>
+          <div>
+            <a href="spring.html">Май</a>
+          </div>
+        </div>
 
-          <button type="submit" class="submit-btn">Отправить</button>
-        </form>
-        <p dir="ltr" lang="ru" style="font-size: 0.9em; color: gray">
-          *Поля формы не работают, это просто демонстрация.
-        </p>
-      </section>
-    </main>
+        <div>
+          <img
+            width="80"
+            height="80"
+            src="https://www.coastalbusiness.com/media/catalog/product/cache/45eae73ed333c8d53637098fdf4d8594/c/o/coastal_listing_image_11.jpg"
+            alt="Лето"
+          />
+          <div>
+            <a href="summer.html">Июнь</a>
+          </div>
+          <div>
+            <a href="summer.html">Июль</a>
+          </div>
+          <div>
+            <a href="summer.html">Август</a>
+          </div>
+        </div>
 
-    <footer
-      id="page-footer"
-      class="main-footer"
-      style="margin-top: 30px; border-top: 1px solid #eee"
-    >
-      <p>
-        © 2025 Мое хобби — гитара. Все права защищены. <br />
-        Сделано с <b>любовью</b> к музыке и <i>коду</i>.
-      </p>
-    </footer>
+        <div>
+          <img
+            width="80"
+            height="80"
+            src="https://img.freepik.com/free-vector/autumn-leaf-icon-vector-isolated_24911-109201.jpg?semt=ais_incoming&w=740&q=80"
+            alt="Осень"
+          />
+          <div>
+            <a href="autumn.html">Сентябрь</a>
+          </div>
+          <div>
+            <a href="autumn.html">Октябрь</a>
+          </div>
+          <div>
+            <a href="autumn.html">Ноябрь</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2>📜 История веб-технологий</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 30px">
+          <div style="flex: 1">
+            <h3>HTML (HyperText Markup Language)</h3>
+            <ul>
+              <li>1989 - Тим Бернерс-Ли предложил концепцию.</li>
+              <li>1993 - Первая версия HTML.</li>
+              <li>1995 - HTML 2.0 (стандарт IETF).</li>
+              <li>2014 - HTML5 стал рекомендацией W3C.</li>
+            </ul>
+          </div>
+          <div style="flex: 1">
+            <h3>CSS (Cascading Style Sheets)</h3>
+            <ol>
+              <li>1994 - Хокон Виум Ли предложил CSS.</li>
+              <li>1996 - CSS1 официально выпущен.</li>
+              <li>1998 - CSS2 добавлены медиа-типы.</li>
+              <li>2011-2021 - CSS3 модульный подход.</li>
+            </ol>
+          </div>
+          <div style="flex: 1">
+            <h3>JavaScript</h3>
+            <dl>
+              <dt><strong>1995</strong></dt>
+              <dd>
+                Брендан Эйх создал Mocha (позже LiveScript, затем JavaScript) за
+                10 дней.
+              </dd>
+              <dt><strong>1997</strong></dt>
+              <dd>ECMAScript 1 — стандартизация.</dd>
+              <dt><strong>2009</strong></dt>
+              <dd>ECMAScript 5 (ES5) — эра современного JS.</dd>
+              <dt><strong>2015+</strong></dt>
+              <dd>Ежегодные обновления ES6, ES7 и т.д.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2>📊 Сравнение смартфонов (характеристики)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Модель</th>
+              <th>Экран</th>
+              <th>Процессор</th>
+              <th>Память</th>
+              <th>Камера</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Phone 15 Pro</td>
+              <td>6.1" OLED</td>
+              <td>A17 Pro</td>
+              <td>8/256 ГБ</td>
+              <td>48 МП + 12 МП</td>
+              <td>999$</td>
+            </tr>
+            <tr>
+              <td>Galaxy S24 Ultra</td>
+              <td>6.8" Dynamic AMOLED</td>
+              <td>Snapdragon 8 Gen 3</td>
+              <td>12/512 ГБ</td>
+              <td>200 МП</td>
+              <td>1299$</td>
+            </tr>
+            <tr>
+              <td>Xiaomi 14 Pro</td>
+              <td>6.73" AMOLED</td>
+              <td>Snapdragon 8 Gen 3</td>
+              <td>16/512 ГБ</td>
+              <td>50 МП + 50 МП</td>
+              <td>899$</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <a href="mailto:nnasta788@gmail.com">Написать нам на почту</a>
+      </div>
+
+      <div>
+        <h2>Адаптивное изображение</h2>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://cdn.pixabay.com/photo/2020/07/06/01/33/sunset-5375069_640.jpg
+            "
+          />
+          <source
+            media="(max-width: 1200px)"
+            srcset="
+              https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg
+            "
+          />
+          <img
+            src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_640.jpg"
+            alt="Пейзаж меняется с разрешением"
+          />
+        </picture>
+        <p><em>При сужении экрана изображение меняется (пункт 10)</em></p>
+      </div>
+
+      <div style="background: #d9e3f0">
+        <h2 style="width: 100%">Галерея природы (подписи и общий фон)</h2>
+        <div>
+          <img
+            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg"
+            alt="Дерево"
+          />
+          <div>Весенний рассвет</div>
+        </div>
+        <div>
+          <img
+            src="https://blog.ostrovok.ru/wp-content/uploads/2013/07/shutterstock_246498988-420x280.jpg"
+            alt="Море"
+          />
+          <div>Летний пляж</div>
+        </div>
+        <div>
+          <img
+            src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_640.jpg"
+            alt="Горы"
+          />
+          <div>Осенние горы</div>
+        </div>
+        <div>
+          <img
+            src="https://img.freepik.com/free-photo/dairy-star-trek-winter-woods-dramatic-picturesque-scene-anticipation-holiday-carpathian-ukraine_146671-14706.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="Снег"
+          />
+          <div>Зимний лес</div>
+        </div>
+      </div>
+
+      <footer>© 2025 Календарь времен года.</footer>
+    </div>
   </body>
 </html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Медиа галерея</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/1995/1995575.png"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Эксперименты с изображениями и медиа</h1>
+
+      <div>
+        <h3>Изображение-кнопка (нажми на меня)</h3>
+        <a href="index.html">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="Кнопка-иконка"
+            title="Вернуться в календарь"
+          />
+        </a>
+        <p>Клик по картинке ведёт на главную страницу</p>
+      </div>
+
+      <div>
+        <h3>Обычное изображение</h3>
+        <img
+          src="https://img3.procvetok.com/crop/w950/89/0f/890fca13a8369965995835d2b7b7ce00.webp"
+          alt="Красивый пейзаж"
+        />
+      </div>
+
+      <div>
+        <h3>Аудиофайл (циклическое проигрывание)</h3>
+        <audio controls loop>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mpeg"
+          />
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+            type="audio/mpeg"
+          />
+          Ваш браузер не поддерживает аудио тег.
+        </audio>
+        <div>🎶 Трек: "SoundHelix Demo" (цикл включён)</div>
+      </div>
+
+      <div>
+        <h3>🎬 Видео контент (постер + текстовая дорожка)</h3>
+        <video width="400" controls>
+          <source
+            src="https://media.w3.org/2010/05/sintel/trailer.mp4"
+            type="video/mp4"
+          />
+
+          <track
+            src="https://media.w3.org/2010/05/sintel/trailer_en.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+            default
+          />
+
+          Ваш браузер не поддерживает видео.
+        </video>
+        <p>
+          <small
+            >Текстовая дорожка показывает имя файла и описание при включении
+            субтитров.</small
+          >
+        </p>
+      </div>
+
+      <footer>
+        <a href="index.html">⬅️ Вернуться на главную (Календарь)</a><br />
+      </footer>
+    </div>
+  </body>
+</html>
